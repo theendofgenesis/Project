@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<courses>
+	<course>
+	  <department>CSC</department>
+	  <number>331</number>
+	  <title>Software Engineering</title>
+	  <description> Learning Software Engineering</description>
+	  <semester>fall</semester>
+	  <catalog>2015/2016</catalog>
+	  <catalog>2016/2017</catalog>
+	  <sequence>A</sequence>
+	  <elective>N</elective>
+	</course> 
+
+
+	<course>
+	  <department>IS</department>
+	  <number>230</number>
+	  <title>Some Database Stuff</title>
+	  <description>Its for plebs</description>
+	  <semester>fall</semester>
+	  <sequence>A</sequence>
+	  <elective>Y</elective>
+	</course> 
+
+</courses>
