@@ -9,6 +9,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -20,6 +21,7 @@ import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -112,7 +114,7 @@ public class Main extends Application  {
 
 
 
-	        //scene 2
+	       //scene 2
 
 	      //Layout 2
 	        HBox HcenterBox2 = new HBox(20);
@@ -194,22 +196,38 @@ public class Main extends Application  {
 	        //scene 3
 
 	        //Layout 3
-	        VBox centerBox3 = new VBox(20);
-	        HBox topBox3 = new HBox(20);
+	        FlowPane flowlayout = new FlowPane(Orientation.HORIZONTAL, 5, 5);
 
-	        BorderPane borderPane3 = new BorderPane();
-	        borderPane3.setCenter(centerBox3);
-	        borderPane3.setTop(topBox3);
+	        flowlayout.setPadding(new Insets(5));
 
-	        scene3 = new Scene(borderPane3, 800, 400);
+	        flowlayout.setVgap(8);
+	        flowlayout.setHgap(4);
+
+	        scene3 = new Scene(flowlayout, 800, 400);
 
 	        scene3.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
 
-	        Label reportLabel = new Label("Generated report goes here");
+	        Label reportLabel = new Label("Courses you have completed");
+	        reportLabel.setId("reportLabel");
 
 
-	        centerBox3.getChildren().addAll(reportLabel);
+	        flowlayout.getChildren().addAll(reportLabel);
+
+	        CheckBox box[]= new CheckBox[10];
+
+	        for(int i = 0; i < 10; i++) {
+
+	        	 box[i] = new CheckBox("Label" + i);
+
+	        	 flowlayout.getChildren().addAll(box[i]);
+
+	        }
+
+
+
+
+
 
 
 
