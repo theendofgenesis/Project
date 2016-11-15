@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
-<courses>
+<SOC>
+
+<catalog year="2012">
 	<course>
 	  <department>CSC</department>
 	  <number>331</number>
 	  <title>Software Engineering</title>
-	  <description> Learning Software Engineering</description>
+	  <description>Learning Software Engineering</description>
 	  <semester>fall</semester>
-	  <catalog>2015/2016</catalog>
-	  <catalog>2016/2017</catalog>
 	  <sequence>A</sequence>
 	  <elective>N</elective>
 	</course> 
@@ -16,12 +16,53 @@
 
 	<course>
 	  <department>IS</department>
-	  <number>230</number>
-	  <title>Some Database Stuff</title>
-	  <description>Its for plebs</description>
+	  <number>120</number>
+	  <title>Databases</title>
+	  <description>Learning Databases</description>
 	  <semester>fall</semester>
 	  <sequence>A</sequence>
-	  <elective>Y</elective>
+	  <elective>N</elective>
 	</course> 
 
-</courses>
+
+	<course>
+	  <department>IT</department>
+	  <number>220</number>
+	  <title>IT class</title>
+	  <description>Learning IT classes</description>
+	  <semester>fall</semester>
+	  <sequence>A</sequence>
+	  <elective>N</elective>
+	</course> 
+
+</catalog>
+
+<catalog year="2014-2015">
+
+	<course>
+	  <department>CSC</department>
+	  <number>331</number>
+	  <title>Software Engineering</title>
+	  <description>Learning Software Engineering</description>
+	  <semester>fall</semester>
+	  <sequence>A</sequence>
+	  <elective>N</elective>
+	</course>
+
+</catalog>
+
+<catalog year="2016-2017">
+
+	<course>
+	  <department>CSC</department>
+	  <number>331</number>
+	  <title>Software Engineering</title>
+	  <description>Learning Software Engineering</description>
+	  <semester>fall</semester>
+	  <sequence>A</sequence>
+	  <elective>N</elective>
+	</course>
+
+</catalog>
+
+</SOC>
