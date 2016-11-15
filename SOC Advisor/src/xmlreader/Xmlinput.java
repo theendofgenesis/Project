@@ -1,75 +1,36 @@
 package xmlreader;
 
-import java.io.FileInputStream;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathFactory;
 
-
-import javax.xml.stream.*;
-import javax.xml.stream.events.*;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 
 public class Xmlinput {
 
-	public static void main(String[] args) {
-		try {
-			XMLInputFactory xmlInputFactory = XMLInputFactory.newFactory();
+	public static void main(String[] args) throws Exception {
+		 DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	        factory.setNamespaceAware(true); // never forget this!
+	        DocumentBuilder builder = factory.newDocumentBuilder();
+	        Document doc = builder.parse("src\\xmlreader\\coursecatalog.xml");
 
-			XMLStreamReader xmlStreamReader = xmlInputFactory.createXMLStreamReader(new FileInputStream("src\\xmlreader\\coursecatalog.xml"));
+	        XPathFactory xpathfactory = XPathFactory.newInstance();
+	        XPath xpath = xpathfactory.newXPath();
 
-			while(xmlStreamReader.hasNext()) {
-				int eventType = xmlStreamReader.getEventType();
-
-				switch(eventType) {
-					case XMLEvent.START_DOCUMENT: System.out.println("Start document");
-
-					break;
-
-					case XMLEvent.START_ELEMENT:
-						System.out.println("Start Element: " + xmlStreamReader.getName());
-
-						if (xmlStreamReader.getAttributeCount() > 0) {
-							System.out.println("\tAttributes: " + xmlStreamReader.getAttributeCount());
-						}
-
-						for (int i = 0; i < xmlStreamReader.getAttributeCount(); i++) {
-							System.out.println("\t" + xmlStreamReader.getAttributeName(i) + ": " + xmlStreamReader.getAttributeValue(i));
-						}
+	        System.out.println("n//1) Get department and number from catalog year 2012");
+	        // 1) Get book titles written after 2001
+	        XPathExpression expr = xpath.compile("//catalog[@year=2012]/course/department/text() | //catalog[@year=2012]/course/number/text()");
+	        Object result = expr.evaluate(doc, XPathConstants.NODESET);
+	        NodeList nodes = (NodeList) result;
+	        for (int i = 0; i < nodes.getLength(); i++) {
+	            System.out.println(nodes.item(i).getNodeValue());
+	        }
 
 
-					break;
-
-					case XMLEvent.END_ELEMENT: System.out.println("End Element: " + xmlStreamReader.getName());
-
-					break;
-
-					case XMLEvent.CHARACTERS:
-					String content = xmlStreamReader.getText().trim();
-					if(!content.isEmpty()) {
-						System.out.println("Characters: " + content);
-
-							if (content.equalsIgnoreCase("CSC")) {
-
-								System.out.println("COURSE FOUND!!!!");
-								// add to list
-						}
-
-					}
-
-
-					break;
-
-
-				}//end switch
-
-				xmlStreamReader.next();
-			} //end while
-
-			if (xmlStreamReader.getEventType() == XMLEvent.END_DOCUMENT) {
-					System.out.println("End Document");
-			}
-			xmlStreamReader.close();
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-
-	}
+	    }
 
 }
