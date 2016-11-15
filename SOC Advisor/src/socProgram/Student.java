@@ -5,17 +5,17 @@ public class Student {
 	String name;
 	String jnumber;
 	int expectedgraddate;
-	String focus;
+	String catyear;
 	Boolean summerclasses;
 	String[] completedcourses;
 	String[] nexttermcourses;
 
-	public Student(String name, String jnumber,int expectedgraddate, String focus, Boolean summerclasses, String[] completedcourses, String[] nexttermcourses) {
+	public Student(String name, String jnumber,int expectedgraddate, String catyear, Boolean summerclasses, String[] completedcourses, String[] nexttermcourses) {
 
 		this.name = name;
 		this.jnumber = jnumber;
 		this.expectedgraddate = expectedgraddate;
-		this.focus = focus;
+		this.catyear = catyear;
 		this.summerclasses = summerclasses;
 		this.completedcourses = completedcourses;
 		this.nexttermcourses = nexttermcourses;
@@ -37,8 +37,8 @@ public class Student {
 		return expectedgraddate;
 	}
 
-	public String getFocus() {
-		return focus;
+	public String getCatYear() {
+		return catyear;
 	}
 
 	public Boolean getSummerClasses() {
@@ -68,8 +68,8 @@ public class Student {
 		return this.expectedgraddate = expectedgraddate;
 	}
 
-	public String setFocus(String focus) {
-		return this.focus = focus;
+	public String setCatYear(String catyear) {
+		return this.catyear = catyear;
 	}
 
 	public Boolean setSummerClasses(Boolean summerclasses) {
@@ -91,7 +91,7 @@ public class Student {
 				"Name is " + name + '\n' +
 				"Jnumber is " + jnumber + '\n' +
 				"Expected Grad Date is " + expectedgraddate + '\n' +
-				"Focus is " + focus + '\n' +
+				"Catalog Year is " + catyear + '\n' +
 				"Taking Summer Classes? " + summerclasses + '\n' +
 				"List of Completed Courses: " + completedcourses + '\n' +
 				"Classes you want to take next: "
@@ -103,7 +103,7 @@ public class Student {
 		return "Name is " + name + '\n' +
 				"Jnumber is " + jnumber + '\n' +
 				"Expected Grad Date is " + expectedgraddate + '\n' +
-				"Focus is " + focus + '\n' +
+				"Catalog Year is " + catyear + '\n' +
 				"Taking Summer Classes? " + summerclasses + '\n' +
 				"List of Completed Courses: " + completedcourses + '\n' +
 				"Classes you want to take next: ";
