@@ -4,6 +4,8 @@ package application;
 
 
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -14,6 +16,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
@@ -29,6 +32,7 @@ public class Main extends Application  {
 	Stage window;
 
 	Scene scene1, scene2, scene3, scene4;
+
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -55,7 +59,7 @@ public class Main extends Application  {
 	        borderPane.setCenter(centerBox);
 	        borderPane.setTop(topBox);
 
-	        scene1 = new Scene(borderPane, 600, 400);
+	        scene1 = new Scene(borderPane, 800, 400);
 
 	        // attach CSS file to first scene
 	        scene1.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
@@ -122,34 +126,55 @@ public class Main extends Application  {
 
 	        //alignment
 	        HbottomBox2.setAlignment(Pos.BOTTOM_RIGHT);
+	        HcenterBox2.setAlignment(Pos.CENTER);
 	        HbottomBox2.setPadding(new Insets(20,20,20,20));
 
 	        BorderPane.setAlignment(borderPane2, Pos.CENTER);
 
 	        //declare scene
-	        scene2 = new Scene(borderPane2, 600, 400);
+	        scene2 = new Scene(borderPane2, 800, 400);
 	        //declare css file for scene
 	        scene2.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
-	        Label focusLabel = new Label("What is your Course?");
+	        Label focusLabel = new Label("What is your Catalog year?");
+	        focusLabel.setId("catalogLabel");
 
 
 	        //catalog radio buttons
-	        ToggleGroup trackgroup = new ToggleGroup();
-	        RadioButton CSCtrack = new RadioButton("CSC");
-	        CSCtrack.setToggleGroup(trackgroup);
-	        CSCtrack.setSelected(true);
-	        RadioButton ITtrack = new RadioButton("IT");
-	        ITtrack.setToggleGroup(trackgroup);
-	        RadioButton IStrack = new RadioButton("IS");
-	        IStrack.setToggleGroup(trackgroup);
+	        ToggleGroup yeargroup = new ToggleGroup();
+
+	        RadioButton twelvebutton = new RadioButton("2012-2013");
+	        twelvebutton.setToggleGroup(yeargroup);
+	        twelvebutton.setSelected(true);
+
+	        RadioButton thirteenbutton = new RadioButton("2013-2014");
+	        thirteenbutton.setToggleGroup(yeargroup);
+
+	        RadioButton sixteenbutton = new RadioButton("2016");
+	        sixteenbutton.setToggleGroup(yeargroup);
+
+
 
 
 	        //apply menu elements
 	        HtopBox2.getChildren().addAll(nameTitle);
-	        HcenterBox2.getChildren().addAll(focusLabel, CSCtrack, ITtrack, IStrack);
+	        HcenterBox2.getChildren().addAll(focusLabel, twelvebutton, thirteenbutton, sixteenbutton);
 	        HbottomBox2.getChildren().addAll(nextButton);
 
+
+
+	        yeargroup.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
+	            @Override
+	            public void changed(ObservableValue<? extends Toggle> ov, Toggle t, Toggle t1) {
+
+	                RadioButton chk = (RadioButton)t1.getToggleGroup().getSelectedToggle(); // Cast object to radio button
+	                System.out.println("Selected Radio Button - "+chk.getText());
+	                student1.setCatYear(chk.getText());
+
+	            }
+
+
+	        });
 
 
 	        //submit button
@@ -159,6 +184,7 @@ public class Main extends Application  {
 				public void handle(ActionEvent event) {
 
 					window.setScene(scene3);
+					student1.toString();
 
 				}
 
@@ -175,7 +201,7 @@ public class Main extends Application  {
 	        borderPane3.setCenter(centerBox3);
 	        borderPane3.setTop(topBox3);
 
-	        scene3 = new Scene(borderPane3, 600, 400);
+	        scene3 = new Scene(borderPane3, 800, 400);
 
 	        scene3.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
