@@ -4,13 +4,13 @@ public class Student {
 
 	String name;
 	String jnumber;
-	int expectedgraddate;
+	String expectedgraddate;
 	String catyear;
 	Boolean summerclasses;
 	String[] completedcourses;
 	String[] nexttermcourses;
 
-	public Student(String name, String jnumber,int expectedgraddate, String catyear, Boolean summerclasses, String[] completedcourses, String[] nexttermcourses) {
+	public Student(String name, String jnumber, String expectedgraddate, String catyear, Boolean summerclasses, String[] completedcourses, String[] nexttermcourses) {
 
 		this.name = name;
 		this.jnumber = jnumber;
@@ -33,7 +33,7 @@ public class Student {
 		return jnumber;
 	}
 
-	public int getExpectedGradDate() {
+	public String getExpectedGradDate() {
 		return expectedgraddate;
 	}
 
@@ -64,7 +64,7 @@ public class Student {
 		return this.jnumber = jnumber;
 	}
 
-	public int setExpectedGradDate(int expectedgraddate) {
+	public String setExpectedGradDate(String expectedgraddate) {
 		return this.expectedgraddate = expectedgraddate;
 	}
 
