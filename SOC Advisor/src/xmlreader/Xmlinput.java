@@ -13,9 +13,12 @@ import org.w3c.dom.NodeList;
 public class Xmlinput {
 
 	public static NodeList nodes;
+	public static XPath xpath;
+	public static Document doc;
+	public static XPathExpression expr;
 
 	public static void createReader() throws Exception {
-	//public static void main(String[] args) throws Exception {
+
 
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true); // never forget this!
@@ -42,6 +45,20 @@ public class Xmlinput {
 		public static void readFile() throws Exception {
 
 			System.out.println(nodes.item(2).getNodeValue());
+
+		}
+
+		public static void classList() throws Exception {
+
+
+			XPathFactory xpathfactory = XPathFactory.newInstance();
+	        XPath xpath = xpathfactory.newXPath();
+
+			expr= xpath.compile("//catalog[@year=2012]/course/department/text()");
+	        for (int i = 0; i < nodes.getLength(); i++) {
+	            System.out.println("from classList: " + nodes.item(i).getNodeValue());
+
+	        	}
 
 		}
 
