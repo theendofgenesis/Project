@@ -1,0 +1,1223 @@
+<?xml version = "1.0"?>
+
+<SOC>
+
+	<generalEducation>
+
+		<course>
+			<class>EH101</class>
+			<title>English Composition I</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>EH102</class>
+			<title>English Composition II</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CA275</class>
+			<title>Decision Making - Small Groups</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>EH372</class>
+			<title>Technical Writing - W</title>
+			<requirement>EH102</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CA110</class>
+			<title>Public Speaking</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>EH215</class>
+			<title>Survey of British Literature I</title>
+			<requirement>EH102</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+			<choice>2</choice>
+		</course>
+
+		<course>
+			<class>EH225</class>
+			<title>Survey of American Literature I</title>
+			<requirement>EH102</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+			<choice>2</choice>
+		</course>
+
+		<course>
+			<class>EH235</class>
+			<title>Survey of World Literature I</title>
+			<requirement>EH102</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+			<choice>2</choice>
+		</course>
+
+		<course>
+			<class>HY101</class>
+			<title>Western Civilization I</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+			<choice>3</choice>
+		</course>
+
+		<course>
+			<class>HY135</class>
+			<title>US History to 1877</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+			<choice>3</choice>
+		</course>
+
+	</generalEducation>
+
+	<core year = "11/12">
+
+		<course>
+			<class>CIS100</class>
+			<title>Information Technology in Society</title>
+			<replaced>CIS300</replaced>
+		</course>
+
+		<course>
+			<class>CSC108</class>
+			<title>Introduction to Computer Science</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC120</class>
+			<title>Problem Solving and Programming Concepts I</title>
+			<requirement>MA125</requirement>
+			<hours>4</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC121</class>
+			<title>Problem Solving and Programming Concepts II</title>
+			<replaced>CSC120</replaced>
+		</course>
+
+		<course>
+			<class>CSC228</class>
+			<title>Digital Logic and Computer Architecture</title>
+			<requirement>CSC120</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC230</class>
+			<title>Data Structures</title>
+			<replaced>CSC231</replaced>
+		</course>
+
+		<course>
+			<class>CSC311</class>
+			<title>Networking and Communications</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC320</class>
+			<title>Computer Organization and Architecture</title>
+			<requirement>CSC228,CSC231</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC322</class>
+			<title>Operating Systems</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC331</class>
+			<title>Software Engineering Principles</title>
+			<requirement>CSC231,CA275</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC333</class>
+			<title>Programming Language Theory</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+		</course>
+
+		<course>
+			<class>CSC340</class>
+			<title>Applied Software Engineering</title>
+			<replaced>CSC440</replaced>
+		</course>
+
+		<course>
+			<class>CSC410</class>
+			<title>Compiler Design and Construction</title>
+			<requirement>CSC332,CSC333</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC412</class>
+			<title>Real-Time Systems</title>
+			<requirement>CSC311,CSC322,CSC332</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC413</class>
+			<title>Computer Graphics</title>
+			<requirement>CSC231,MA237</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC416</class>
+			<title>AI Theory and Programming</title>
+			<requirement>CSC332</requirement>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC417</class>
+			<title>Computer Game Development</title>
+			<requirement>CSC331</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC432</class>
+			<title>Performance Evaluation of Algorithms</title>
+			<replaced>CSC332</replaced>
+		</course>
+
+		<course>
+			<class>CSC434</class>
+			<title>Formal Language and Automata Theory</title>
+			<requirement>CSC333</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>ITE474</class>
+			<title>Human Computer Interface</title>
+			<requirement>EH372</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CIS497</class>
+			<title>Senior Capstone Experience</title>
+			<requirement>EH372,CSC333</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CIS498</class>
+			<title>Senior Seminar</title>
+			<requirement>CSC331</requirement>
+			<hours>0</hours>
+			<semester>FS</semester>
+		</course>
+	</core>
+
+	<core year = "12/13">
+		<course>
+			<class>CSC108</class>
+			<title>Introduction to Computer Science</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC120</class>
+			<title>Problem Solving and Programming Concepts</title>
+			<requirement></requirement>
+			<hours>4</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC121</class>
+			<title>Problem Solving and Programming Concepts II</title>
+			<replaced>CSC120</replaced>
+		</course>
+
+		<course>
+			<class>CSC228</class>
+			<title>Digital Logic and Computer Architecture</title>
+			<requirement>CSC120</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC230</class>
+			<title>Data Structures</title>
+			<replaced>CSC231</replaced>
+		</course>
+
+		<course>
+			<class>CIS300</class>
+			<title>Information Technology in Society</title>
+			<requirement></requirement>
+			<hours>1</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC311</class>
+			<title>Networking and Communications</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC320</class>
+			<title>Computer Organization and Architecture</title>
+			<requirement>CSC228,CSC231</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC322</class>
+			<title>Operating Systems</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC331</class>
+			<title>Software Engineering Principles</title>
+			<requirement>CSC231,CA275</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC333</class>
+			<title>Programming Language Theory</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+		</course>
+
+		<course>
+			<class>CSC340</class>
+			<title>Applied Software Engineering</title>
+			<replaced>CSC440</replaced>
+		</course>
+
+		<course>
+			<class>CSC410</class>
+			<title>Compiler Design and Construction</title>
+			<requirement>CSC332,CSC333</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC412</class>
+			<title>Real-Time Systems</title>
+			<requirement>CSC311,CSC322,CSC332</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC413</class>
+			<title>Computer Graphics</title>
+			<requirement>CSC231,MA237</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC416</class>
+			<title>AI Theory and Programming</title>
+			<requirement>CSC332</requirement>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC417</class>
+			<title>Computer Game Development</title>
+			<requirement>CSC331</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC432</class>
+			<title>Performance Evaluation of Algorithms</title>
+			<replaced>CSC332</replaced>
+		</course>
+
+		<course>
+			<class>CSC434</class>
+			<title>Formal Language and Automata Theory</title>
+			<requirement>CSC333</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>ITE474</class>
+			<title>Human Computer Interface</title>
+			<requirement>EH372</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CIS497</class>
+			<title>Senior Capstone Experience</title>
+			<requirement>EH372,CSC333</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CIS498</class>
+			<title>Senior Seminar</title>
+			<requirement>CSC331</requirement>
+			<hours>0</hours>
+			<semester>FS</semester>
+		</course>
+	</core>
+
+	<core year = "13/14">
+		<course>
+			<class>CSC108</class>
+			<title>Introduction to Computer Science</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC120</class>
+			<title>Problem Solving and Programming Concepts</title>
+			<requirement></requirement>
+			<hours>4</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC121</class>
+			<title>Problem Solving and Programming Concepts II</title>
+			<replaced>CSC120</replaced>
+		</course>
+
+		<course>
+			<class>CSC228</class>
+			<title>Digital Logic and Computer Architecture</title>
+			<requirement>CSC120</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC230</class>
+			<title>Data Structures</title>
+			<replaced>CSC231</replaced>
+		</course>
+
+		<course>
+			<class>CIS300</class>
+			<title>Information Technology in Society</title>
+			<requirement></requirement>
+			<hours>1</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC311</class>
+			<title>Networking and Communications</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC320</class>
+			<title>Computer Organization and Architecture</title>
+			<requirement>CSC228,CSC231</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC322</class>
+			<title>Operating Systems</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC331</class>
+			<title>Software Engineering Principles</title>
+			<requirement>CSC231,CA275</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC333</class>
+			<title>Programming Language Theory</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+		</course>
+
+		<course>
+			<class>CSC340</class>
+			<title>Applied Software Engineering</title>
+			<replaced>CSC440</replaced>
+		</course>
+
+		<course>
+			<class>CSC410</class>
+			<title>Compiler Design and Construction</title>
+			<requirement>CSC332,CSC333</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC412</class>
+			<title>Real-Time Systems</title>
+			<requirement>CSC311,CSC322,CSC332</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC413</class>
+			<title>Computer Graphics</title>
+			<requirement>CSC231,MA237</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC416</class>
+			<title>AI Theory and Programming</title>
+			<requirement>CSC332</requirement>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC417</class>
+			<title>Computer Game Development</title>
+			<requirement>CSC331</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC432</class>
+			<title>Performance Evaluation of Algorithms</title>
+			<replaced>CSC332</replaced>
+		</course>
+
+		<course>
+			<class>CSC434</class>
+			<title>Formal Language and Automata Theory</title>
+			<requirement>CSC333</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC490</class>
+			<title>CSC Special Topics</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CIS497</class>
+			<title>Senior Capstone Experience</title>
+			<requirement>EH372,CSC333</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CIS498</class>
+			<title>Senior Seminar</title>
+			<requirement>CSC331</requirement>
+			<hours>0</hours>
+			<semester>FS</semester>
+		</course>
+	</core>
+
+	<core year = "14/15">
+		<course>
+			<class>CSC108</class>
+			<title>Introduction to Computer Science</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC120</class>
+			<title>Problem Solving and Programming Concepts</title>
+			<requirement></requirement>
+			<hours>4</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC121</class>
+			<title>Problem Solving and Programming Concepts II</title>
+			<replaced>CSC120</replaced>
+		</course>
+
+		<course>
+			<class>CSC228</class>
+			<title>Digital Logic and Computer Architecture</title>
+			<requirement>CSC120</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC230</class>
+			<title>Data Structures</title>
+			<replaced>CSC231</replaced>
+		</course>
+
+		<course>
+			<class>CIS300</class>
+			<title>Information Technology in Society</title>
+			<requirement></requirement>
+			<hours>1</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC311</class>
+			<title>Networking and Communications</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC320</class>
+			<title>Computer Organization and Architecture</title>
+			<requirement>CSC228,CSC231</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC322</class>
+			<title>Operating Systems</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC331</class>
+			<title>Software Engineering Principles</title>
+			<requirement>CSC231,CA275</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC333</class>
+			<title>Programming Language Theory</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+		</course>
+
+		<course>
+			<class>CSC340</class>
+			<title>Applied Software Engineering</title>
+			<replaced>CSC440</replaced>
+		</course>
+
+		<course>
+			<class>CSC410</class>
+			<title>Compiler Design and Construction</title>
+			<requirement>CSC332,CSC333</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC412</class>
+			<title>Real-Time Systems</title>
+			<requirement>CSC311,CSC322,CSC332</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC413</class>
+			<title>Computer Graphics</title>
+			<requirement>CSC231MA237</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC416</class>
+			<title>AI Theory and Programming</title>
+			<requirement>CSC332</requirement>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC417</class>
+			<title>Computer Game Development</title>
+			<requirement>CSC331</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC432</class>
+			<title>Performance Evaluation of Algorithms</title>
+			<replaced>CSC332</replaced>
+		</course>
+
+		<course>
+			<class>CSC434</class>
+			<title>Formal Language and Automata Theory</title>
+			<requirement>CSC333</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC457</class>
+			<title>Data Warehousing</title>
+			<requirement>CIS324</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC490</class>
+			<title>CSC Special Topics</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CIS497</class>
+			<title>Senior Capstone Experience</title>
+			<requirement>EH372,CSC333</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CIS498</class>
+			<title>Senior Seminar</title>
+			<requirement>CSC331</requirement>
+			<hours>0</hours>
+			<semester>FS</semester>
+		</course>
+	</core>
+
+	<core year = "15/16">
+
+		<course>
+			<class>CSC108</class>
+			<title>Introduction to Computer Science</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC120</class>
+			<title>Problem Solving and Programming Concepts</title>
+			<requirement></requirement>
+			<hours>4</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC228</class>
+			<title>Digital Logic and Computer Architecture</title>
+			<requirement>CSC120</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CIS300</class>
+			<title>Information Technology in Society</title>
+			<requirement></requirement>
+			<hours>1</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC311</class>
+			<title>Networking and Communications</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC320</class>
+			<title>Computer Organization and Architecture</title>
+			<requirement>CSC228,CSC231</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC322</class>
+			<title>Operating Systems</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CIS324</class>
+			<title>Database Design Development and Management</title>
+			<requirement>MA125</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC331</class>
+			<title>Software Engineering Principles</title>
+			<requirement>CSC231,CA275</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC332</class>
+			<title>Advanced Data Structures and Algorithms</title>
+			<requirement>CSC231,MA267</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+		</course>
+
+		<course>
+			<class>CSC333</class>
+			<title>Programming Language Theory</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+		</course>
+
+		<course>
+			<class>CYB399</class>
+			<title>Concurrency and Distributed Computing</title>
+			<requirement>CSC311,CSC322</requirement>
+			<hours>3</hours>
+			<semester></semester>
+		</course>
+
+		<course>
+			<class>CYB400</class>
+			<title>Network and Operating System Vulnerabilities</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester></semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC410</class>
+			<title>Compiler Design and Construction</title>
+			<requirement>CSC332,CSC333</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC412</class>
+			<title>Real-Time Systems</title>
+			<requirement>CSC311,CSC322,CSC332</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC413</class>
+			<title>Computer Graphics</title>
+			<requirement>CSC231,MA237</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC416</class>
+			<title>AI Theory and Programming</title>
+			<requirement>CSC332</requirement>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC417</class>
+			<title>Computer Game Development</title>
+			<requirement>CSC331</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC418</class>
+			<title>Advanced Game and Simulation Development</title>
+			<requirement>CSC417,CSC413</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC434</class>
+			<title>Formal Language and Automata Theory</title>
+			<requirement>CSC333</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC457</class>
+			<title>Data Warehousing</title>
+			<requirement>CIS324</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CIS494</class>
+			<title>Directed Study</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CIS497</class>
+			<title>Senior Capstone Experience</title>
+			<requirement>EH372,CSC333</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CIS498</class>
+			<title>Senior Seminar</title>
+			<requirement>CSC331</requirement>
+			<hours>0</hours>
+			<semester>FS</semester>
+		</course>
+
+	</core>
+
+	<core year = "16/17">
+		<course>
+			<class>CSC108</class>
+			<title>Introduction to Computer Science</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC120</class>
+			<title>Problem Solving and Programming Concepts</title>
+			<requirement></requirement>
+			<hours>4</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC228</class>
+			<title>Digital Logic and Computer Architecture</title>
+			<requirement>CSC120</requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CIS300</class>
+			<title>Information Technology in Society</title>
+			<requirement></requirement>
+			<hours>1</hours>
+			<semester>FSU</semester>
+		</course>
+
+		<course>
+			<class>CSC311</class>
+			<title>Networking and Communications</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC320</class>
+			<title>Computer Organization and Architecture</title>
+			<requirement>CSC228,CSC231</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC322</class>
+			<title>Operating Systems</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CIS324</class>
+			<title>Database Design Development and Management</title>
+			<requirement>MA125</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC331</class>
+			<title>Software Engineering Principles</title>
+			<requirement>CSC231,CA275</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CSC332</class>
+			<title>Advanced Data Structures and Algorithms</title>
+			<requirement>CSC231,MA267</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+		</course>
+
+		<course>
+			<class>CSC333</class>
+			<title>Programming Language Theory</title>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+		</course>
+
+		<course>
+			<class>CYB399</class>
+			<title>Concurrency and Distributed Computing</title>
+			<requirement>CSC311,CSC322</requirement>
+			<hours>3</hours>
+			<semester></semester>
+		</course>
+
+		<course>
+			<class>CYB400</class>
+			<title>Network and Operating System Vulnerabilities</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester></semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC410</class>
+			<title>Compiler Design and Construction</title>
+			<requirement>CSC332,CSC333</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC412</class>
+			<title>Real-Time Systems</title>
+			<requirement>CSC311,CSC322,CSC332</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC413</class>
+			<title>Computer Graphics</title>
+			<requirement>CSC231,MA237</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC416</class>
+			<title>AI Theory and Programming</title>
+			<requirement>CSC332</requirement>
+			<requirement>CSC231</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		<course>
+
+		<course>
+			<class>CSC417</class>
+			<title>Computer Game Development</title>
+			<requirement>CSC331</requirement>
+			<hours>3</hours>
+			<semester>F</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC418</class>
+			<title>Advanced Game and Simulation Development</title>
+			<requirement>CSC417,CSC413</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CSC434</class>
+			<title>Formal Language and Automata Theory</title>
+			<requirement>CSC333</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+		</course>
+
+		<course>
+			<class>CSC457</class>
+			<title>Data Warehousing</title>
+			<requirement>CIS324</requirement>
+			<hours>3</hours>
+			<semester>S</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CIS494</class>
+			<title>Directed Study</title>
+			<requirement></requirement>
+			<hours>3</hours>
+			<semester>FSU</semester>
+			<choice>1</choice>
+		</course>
+
+		<course>
+			<class>CIS497</class>
+			<title>Senior Capstone Experience</title>
+			<requirement>EH372,CSC333</requirement>
+			<hours>3</hours>
+			<semester>FS</semester>
+		</course>
+
+		<course>
+			<class>CIS498</class>
+			<title>Senior Seminar</title>
+			<requirement>CSC331</requirement>
+			<hours>0</hours>
+			<semester>FS</semester>
+		<course>
+
+	</core>
+
+</SOC>
