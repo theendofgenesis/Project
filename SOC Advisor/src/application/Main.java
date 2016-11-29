@@ -30,7 +30,13 @@ import javafx.util.converter.IntegerStringConverter;
 import socProgram.Student;
 import xmlreader.Xmlinput;
 
+
+
+
 public class Main extends Application  {
+
+	public static RadioButton catChk;
+
 	Button button;
 
 	Stage window;
@@ -180,15 +186,24 @@ public class Main extends Application  {
 	        //catalog radio buttons
 	        ToggleGroup yeargroup = new ToggleGroup();
 
-	        RadioButton twelvebutton = new RadioButton("2012-2013");
-	        twelvebutton.setToggleGroup(yeargroup);
+	        RadioButton catyr12 = new RadioButton("20112012");
+	        catyr12.setToggleGroup(yeargroup);
 
 
-	        RadioButton thirteenbutton = new RadioButton("2014-2015");
-	        thirteenbutton.setToggleGroup(yeargroup);
+	        RadioButton catyr13 = new RadioButton("20122013");
+	        catyr13.setToggleGroup(yeargroup);
 
-	        RadioButton sixteenbutton = new RadioButton("2015-2016");
-	        sixteenbutton.setToggleGroup(yeargroup);
+	        RadioButton catyr14 = new RadioButton("20132014");
+	        catyr14.setToggleGroup(yeargroup);
+
+	        RadioButton catyr15 = new RadioButton("20142015");
+	        catyr15.setToggleGroup(yeargroup);
+
+	        RadioButton catyr16 = new RadioButton("20152016");
+	        catyr16.setToggleGroup(yeargroup);
+
+	        RadioButton catyr17 = new RadioButton("20162017");
+	        catyr17.setToggleGroup(yeargroup);
 
 
 	        //what is your expected grad date?
@@ -212,7 +227,7 @@ public class Main extends Application  {
 
 	        //apply menu elements
 	        HtopBox2.getChildren().addAll(nameTitle);
-	        flowlayout2.getChildren().addAll(focusLabel, twelvebutton, thirteenbutton, sixteenbutton, gradDateLabel, gradDateInput, summerLabel, yesbutton, nobutton);
+	        flowlayout2.getChildren().addAll(focusLabel, catyr12, catyr13, catyr14, catyr15, catyr16, gradDateLabel, gradDateInput, summerLabel, yesbutton, nobutton);
 	        HbottomBox2.getChildren().addAll(previousButton, nextButton, cancelButton);
 
 
@@ -221,9 +236,9 @@ public class Main extends Application  {
 	            @Override
 	            public void changed(ObservableValue<? extends Toggle> ov, Toggle t, Toggle t1) {
 
-	                RadioButton chk = (RadioButton)t1.getToggleGroup().getSelectedToggle(); // Cast object to radio button
-	                System.out.println("Selected Radio Button - "+chk.getText());
-	                student1.setCatYear(chk.getText());
+	                catChk = (RadioButton)t1.getToggleGroup().getSelectedToggle(); // Cast object to radio button
+	                System.out.println(catChk.getText());
+	                student1.setCatYear(catChk.getText());
 
 	            }
 
@@ -255,6 +270,20 @@ public class Main extends Application  {
 					window.setScene(scene3);
 					student1.setExpectedGradDate(gradDateInput.getText());
 					student1.toString();
+
+					 //must run createReader first BEFORE modifying course list
+			        try {
+						Xmlinput.createReader();
+
+						Xmlinput.readFile();
+
+				        Xmlinput.classList();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+
+
 
 				}
 
@@ -301,14 +330,11 @@ public class Main extends Application  {
 	        reportLabel.setId("reportLabel");
 
 
-	        CheckBox box[]= new CheckBox[10];
 
-	        //must run createReader first BEFORE modifying course list
-	        Xmlinput.createReader();
 
-	        Xmlinput.readFile();
 
-	        Xmlinput.classList();
+
+	        CheckBox box[]= new CheckBox[Xmlinput.nodes.getLength()];
 
 
 	        for(int i = 0; i < Xmlinput.nodes.getLength(); i++) {
