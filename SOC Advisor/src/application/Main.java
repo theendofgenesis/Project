@@ -1,8 +1,6 @@
 //SOC advisor package
 package application;
 
-
-
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -31,22 +29,18 @@ import socProgram.Student;
 import xmlreader.Xmlinput;
 
 public class Main extends Application  {
+	
 	Button button;
-
 	Stage window;
-
 	Scene scene1, scene2, scene3, scene4;
-
 
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-
 			window = primaryStage;
-
 			window.setTitle("University of South Alabama SoC Academic Adivising Helper");
 
-			//Buttons
+		//Buttons
 	        Button submitButton = new Button("Submit");
 	        Button nextButton = new Button("Next");
 	        Button nextButton2 = new Button("Next");
