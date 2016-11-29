@@ -25,7 +25,6 @@ public class Student {
 	//getter methods
 
 	public String getName() {
-
 		return name;
 	}
 
@@ -57,7 +56,6 @@ public class Student {
 
 	public String setName(String name) {
 		return this.name = name;
-
 	}
 
 	public String setJnumber(String jnumber) {
@@ -95,8 +93,6 @@ public class Student {
 				"Taking Summer Classes? " + summerclasses + '\n' +
 				"List of Completed Courses: " + completedcourses + '\n' +
 				"Classes you want to take next: "
-
-
 
 				);
 
