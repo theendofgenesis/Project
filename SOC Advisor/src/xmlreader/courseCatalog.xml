@@ -2,295 +2,7 @@
 
 <SOC>
 
-	<generalEducation>
-
-		<course>
-			<class>EH101</class>
-			<title>English Composition I</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-		</course>
-
-		<course>
-			<class>EH102</class>
-			<title>English Composition II</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-		</course>
-
-		<course>
-			<class>CA275</class>
-			<title>Decision Making - Small Groups</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-		</course>
-
-		<course>
-			<class>EH372</class>
-			<title>Technical Writing - W</title>
-			<requirement>EH102</requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-		</course>
-
-		<course>
-			<class>CA110</class>
-			<title>Public Speaking</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-		</course>
-
-		<course>
-			<class>EH215</class>
-			<title>Survey of British Literature I</title>
-			<requirement>EH102</requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>2</choice>
-		</course>
-
-		<course>
-			<class>EH225</class>
-			<title>Survey of American Literature I</title>
-			<requirement>EH102</requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>2</choice>
-		</course>
-
-		<course>
-			<class>EH235</class>
-			<title>Survey of World Literature I</title>
-			<requirement>EH102</requirement>
-			<hours>3</hours>
-			<semester>FS</semester>
-			<choice>2</choice>
-		</course>
-
-		<course>
-			<class>HY101</class>
-			<title>Western Civilization I</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>3</choice>
-		</course>
-
-		<course>
-			<class>HY135</class>
-			<title>US History to 1877</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>3</choice>
-		</course>
-
-		<course>
-			<class>EH216</class>
-			<title>Survey of British Literature II</title>
-			<requirement>EH102</requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>4</choice>
-		</course>
-
-		<course>
-			<class>EH226</class>
-			<title>Survey of American Literature II</title>
-			<requirement>EH102</requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>4</choice>
-		</course>
-
-		<course>
-			<class>EH236</class>
-			<title>Survey of World Literature II</title>
-			<requirement>EH102</requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>4</choice>
-		</course>
-
-		<course>
-			<class>HY102</class>
-			<title>History of Western Civilization II</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>4</choice>
-		</course>
-
-		<course>
-			<class>HY136</class>
-			<title>US History Since 1877</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>4</choice>
-		</course>
-
-		<course>
-			<class>AN999</class>
-			<title>Anthropology Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>5</choice>
-		</course>
-
-		<course>
-			<class>ECO999</class>
-			<title>Economy Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>5</choice>
-		</course>
-
-		<course>
-			<class>GEO999</class>
-			<title>Geography Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>5</choice>
-		</course>
-
-		<course>
-			<class>HY999</class>
-			<title>History Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>5</choice>
-		</course>
-
-		<course>
-			<class>PSY999</class>
-			<title>Psychology Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>5</choice>
-		</course>
-
-		<course>
-			<class>SY999</class>
-			<title>Sociology Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>5</choice>
-		</course>
-
-		<course>
-			<class>PSC999</class>
-			<title>Political Science Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>5</choice>
-		</course>
-
-		<course>
-			<class>ARS999</class>
-			<title>Art Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>6</choice>
-		</course>
-
-		<course>
-			<class>ARH999</class>
-			<title>Art History</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>6</choice>
-		</course>
-
-		<course>
-			<class>EH999</class>
-			<title>Literature Elecetive</title>
-			<requirement>EH102</requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>7</choice>
-		</course>
-
-		<course>
-			<class>PH999</class>
-			<title>Philosophy Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>7</choice>
-		</course>
-
-		<course>
-			<class>REL999</class>
-			<title>Religious Studies Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>7</choice>
-		</course>
-
-		<course>
-			<class>LG999</class>
-			<title>Foreign Language Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>7</choice>
-		</course>
-
-		<course>
-			<class>ARS999</class>
-			<title>Art Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>7</choice>
-		</course>
-
-		<course>
-			<class>ARH999</class>
-			<title>Art History Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>7</choice>
-		</course>
-
-		<course>
-			<class>MU999</class>
-			<title>Music Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>7</choice>
-		</course>
-
-		<course>
-			<class>DRA999</class>
-			<title>Drama Elective</title>
-			<requirement></requirement>
-			<hours>3</hours>
-			<semester>FSU</semester>
-			<choice>7</choice>
-		</course>
-
-	</generalEducation>
-
-	<core year = "11/12">
-
+	<core year="20112012">
 		<course>
 			<class>CIS100</class>
 			<title>Information Technology in Society</title>
@@ -465,7 +177,7 @@
 		</course>
 	</core>
 
-	<core year = "12/13">
+	<core year = "20122013">
 		<course>
 			<class>CSC108</class>
 			<title>Introduction to Computer Science</title>
@@ -642,7 +354,7 @@
 		</course>
 	</core>
 
-	<core year = "13/14">
+	<core year = "20132014">
 		<course>
 			<class>CSC108</class>
 			<title>Introduction to Computer Science</title>
@@ -819,7 +531,7 @@
 		</course>
 	</core>
 
-	<core year = "14/15">
+	<core year = "20142015">
 		<course>
 			<class>CSC108</class>
 			<title>Introduction to Computer Science</title>
@@ -1005,7 +717,7 @@
 		</course>
 	</core>
 
-	<core year = "15/16">
+	<core year = "20152016">
 
 		<course>
 			<class>CSC108</class>
@@ -1212,7 +924,7 @@
 
 	</core>
 
-	<core year = "16/17">
+	<core year = "20162017">
 		<course>
 			<class>CSC108</class>
 			<title>Introduction to Computer Science</title>
@@ -1354,7 +1066,7 @@
 			<hours>3</hours>
 			<semester>F</semester>
 			<choice>1</choice>
-		<course>
+		</course>
 
 		<course>
 			<class>CSC417</class>
@@ -1414,7 +1126,7 @@
 			<requirement>CSC331</requirement>
 			<hours>0</hours>
 			<semester>FS</semester>
-		<course>
+		</course>
 
 	</core>
 
