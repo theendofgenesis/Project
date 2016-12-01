@@ -1,5 +1,12 @@
+/**
+* @author Ken Hyatt, Genesis Stroud, David Rose, David McCarter
+* @version 4
+*/
+
 //SOC advisor package
 package application;
+
+
 
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
@@ -28,19 +35,31 @@ import javafx.util.converter.IntegerStringConverter;
 import socProgram.Student;
 import xmlreader.Xmlinput;
 
+
+
+
 public class Main extends Application  {
-	
+
+	public static RadioButton catChk;
+
+	public static FlowPane flowlayout3;
+
 	Button button;
+
 	Stage window;
+
 	Scene scene1, scene2, scene3, scene4;
+
 
 	@Override
 	public void start(Stage primaryStage) {
 		try {
+
 			window = primaryStage;
+
 			window.setTitle("University of South Alabama SoC Academic Adivising Helper");
 
-		//Buttons
+			//Buttons
 	        Button submitButton = new Button("Submit");
 	        Button nextButton = new Button("Next");
 	        Button nextButton2 = new Button("Next");
@@ -174,15 +193,24 @@ public class Main extends Application  {
 	        //catalog radio buttons
 	        ToggleGroup yeargroup = new ToggleGroup();
 
-	        RadioButton twelvebutton = new RadioButton("2012-2013");
-	        twelvebutton.setToggleGroup(yeargroup);
+	        RadioButton catyr12 = new RadioButton("20112012");
+	        catyr12.setToggleGroup(yeargroup);
 
 
-	        RadioButton thirteenbutton = new RadioButton("2014-2015");
-	        thirteenbutton.setToggleGroup(yeargroup);
+	        RadioButton catyr13 = new RadioButton("20122013");
+	        catyr13.setToggleGroup(yeargroup);
 
-	        RadioButton sixteenbutton = new RadioButton("2015-2016");
-	        sixteenbutton.setToggleGroup(yeargroup);
+	        RadioButton catyr14 = new RadioButton("20132014");
+	        catyr14.setToggleGroup(yeargroup);
+
+	        RadioButton catyr15 = new RadioButton("20142015");
+	        catyr15.setToggleGroup(yeargroup);
+
+	        RadioButton catyr16 = new RadioButton("20152016");
+	        catyr16.setToggleGroup(yeargroup);
+
+	        RadioButton catyr17 = new RadioButton("20162017");
+	        catyr17.setToggleGroup(yeargroup);
 
 
 	        //what is your expected grad date?
@@ -206,7 +234,7 @@ public class Main extends Application  {
 
 	        //apply menu elements
 	        HtopBox2.getChildren().addAll(nameTitle);
-	        flowlayout2.getChildren().addAll(focusLabel, twelvebutton, thirteenbutton, sixteenbutton, gradDateLabel, gradDateInput, summerLabel, yesbutton, nobutton);
+	        flowlayout2.getChildren().addAll(focusLabel, catyr12, catyr13, catyr14, catyr15, catyr16, gradDateLabel, gradDateInput, summerLabel, yesbutton, nobutton);
 	        HbottomBox2.getChildren().addAll(previousButton, nextButton, cancelButton);
 
 
@@ -215,9 +243,9 @@ public class Main extends Application  {
 	            @Override
 	            public void changed(ObservableValue<? extends Toggle> ov, Toggle t, Toggle t1) {
 
-	                RadioButton chk = (RadioButton)t1.getToggleGroup().getSelectedToggle(); // Cast object to radio button
-	                System.out.println("Selected Radio Button - "+chk.getText());
-	                student1.setCatYear(chk.getText());
+	                catChk = (RadioButton)t1.getToggleGroup().getSelectedToggle(); // Cast object to radio button
+	                System.out.println(catChk.getText());
+	                student1.setCatYear(catChk.getText());
 
 	            }
 
@@ -250,6 +278,59 @@ public class Main extends Application  {
 					student1.setExpectedGradDate(gradDateInput.getText());
 					student1.toString();
 
+
+			        try {
+
+
+			        	//must run createReader first BEFORE modifying course list
+						Xmlinput.createReader();
+
+
+				        Xmlinput.classList();
+
+				        CheckBox box[]= new CheckBox[Xmlinput.nodes.getLength()];
+
+
+				        for(int i = 0; i < Xmlinput.nodes.getLength(); i++) {
+
+				        	 box[i] = new CheckBox(Xmlinput.nodes.item(i).getNodeValue());
+
+				        	 flowlayout3.getChildren().addAll(box[i]);
+
+
+				        	 box[i].selectedProperty().addListener(new ChangeListener<Boolean>() {
+				 	            public void changed(ObservableValue<? extends Boolean> ov, Boolean old_val, Boolean selected) {
+
+
+				 	            	if(selected) {
+
+				 	            		// this is not correct
+				 	            		if(Xmlinput.nodes.item(0).getNodeValue().equals("Information Technology in Society")) {
+
+				 	            			System.out.println("it worked");
+
+
+				 	            		} else
+				 	            		System.out.println("another button");
+
+				 	            	}else {
+
+
+				 	            	}
+
+				 	            }
+				 	        });
+
+				        }
+
+
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+
+
+
 				}
 
 	        });
@@ -260,7 +341,7 @@ public class Main extends Application  {
 	        //***SCENE 3***
 
 	        //Layout 3
-	        FlowPane flowlayout3 = new FlowPane(Orientation.HORIZONTAL, 5, 5);
+	        flowlayout3 = new FlowPane(Orientation.HORIZONTAL, 5, 5);
 
 
 	        HBox HtopBox3 = new HBox(20);
@@ -286,7 +367,7 @@ public class Main extends Application  {
 	        flowlayout3.setHgap(4);
 
 	        //declare scene
-	        scene3 = new Scene(borderPane3, 850, 400);
+	        scene3 = new Scene(borderPane3, 1050, 500);
 
 	        scene3.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
@@ -295,23 +376,11 @@ public class Main extends Application  {
 	        reportLabel.setId("reportLabel");
 
 
-	        CheckBox box[]= new CheckBox[10];
-
-	        //must run createReader first BEFORE modifying course list
-	        Xmlinput.createReader();
-
-	        Xmlinput.readFile();
-
-	        Xmlinput.classList();
+	        //here is where the three methods went
 
 
-	        for(int i = 0; i < Xmlinput.nodes.getLength(); i++) {
 
-	        	 box[i] = new CheckBox(Xmlinput.nodes.item(i).getNodeValue());
 
-	        	 flowlayout3.getChildren().addAll(box[i]);
-
-	        }
 
 
 
